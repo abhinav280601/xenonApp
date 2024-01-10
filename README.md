@@ -1,0 +1,7 @@
+''' clone repo '''
+''' cd server '''
+''' npm i '''
+''' npm run start '''
+''' cd .. '''
+''' cd client '''
+''' npm run dev '''
