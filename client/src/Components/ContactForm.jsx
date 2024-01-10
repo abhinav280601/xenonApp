@@ -25,7 +25,7 @@ const ContactForm = () => {
 
       // Reset form after successful submission
       await axios
-        .post("http://localhost:5000/formSubmit", formData)
+        .post("https://xenonbackend-2l4a.onrender.com/formSubmit", formData)
         .then((response) => {
           console.log(response);
           alert("Form submitted successfully!");
