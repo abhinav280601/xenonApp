@@ -96,7 +96,7 @@ exports.formSubmit = async (req, res, next) => {
 
 exports.registerUser = async (req, res, next) => {
     try {
-        const { name, username, password, age } = req.body;
+        const { name, username, password, phoneNumber } = req.body;
         const hashedPassword = await bcrypt.hash(password, 10);
 
         // Create a new user
@@ -106,6 +106,7 @@ exports.registerUser = async (req, res, next) => {
                 name: name,
                 username: username,
                 password: hashedPassword,
+                phoneNumber: phoneNumber
             });
 
             const token = jwt.sign(
